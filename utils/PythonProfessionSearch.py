@@ -60,7 +60,6 @@ data = {
   'options': 'python',
   'options2': ''
 }
-response1 = requests.post('https://app.careersaas.com/portal/search/search_jobs.html', headers=headers, cookies=cookies, data=data)
 response = requests.post('https://app.careersaas.com/portal/search/search_jobs.html', headers=headers, cookies=cookies, data=data).json()
 
 response_data = response['data']
